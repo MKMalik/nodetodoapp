@@ -10,7 +10,7 @@ var urlencodedParser = bodyParser.urlencoded({entended: false});
 //     console.log('DB Connected!');
 // });
 
-mongoose.connect('mongodb+srv://mkmalik:mkmalikDBpassword@cluster0.ty01f.mongodb.net/todo-app?retryWrites=true&w=majority').then(() => {
+mongoose.connect('mongodb://localhost:27017/todo-app').then(() => {
 console.log("Connected to Database");
 }).catch((err) => {
     console.log("Not Connected to Database ERROR!\n", err);
