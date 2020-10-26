@@ -1,14 +1,7 @@
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-// var data = [];
 var urlencodedParser = bodyParser.urlencoded({entended: false});
-
-//Connect to db
-// mongoose.connect('mongodb+srv://mkmalik:mkmalikDBpassword@cluster0.ty01f.mongodb.net/todo-app?retryWrites=true&w=majority', function(err) {
-//     if (err) { throw err;  console.log('DB Connection problem');}
-//     console.log('DB Connected!');
-// });
 
 mongoose.connect('mongodb://localhost:27017/todo-app').then(() => {
 console.log("Connected to Database");
