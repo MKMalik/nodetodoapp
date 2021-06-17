@@ -13,8 +13,10 @@ app.use(express.static('./public'));
 //fire controllers
 todoController(app);
 
+var host = 'localhost';
+
 //listen to port
-app.listen(3000, '192.168.43.179', function(err) {
+app.listen(3000, host, function(err) {
     if (err) throw err;
-    console.log('Server is up and running on 192.168.43.179:3000');
+    console.log('Server is up and running');
 });
